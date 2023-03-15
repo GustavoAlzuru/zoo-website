@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+img{
+    max-width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 35%;
+}
+header{
+    background-image: url('https://www.marylandzoo.org/wp-content/themes/mission/assets/images/brush-orange-2000x60.png');
+    height:60px;
+}
+.container{
+    width: 60%;
+    margin: 0 auto;
+}
+.container-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    height: 40px;
+}
+nav{
+    display: flex;
+    gap: 12px;
+}
+nav a{
+    color: #000000;
+    font-size: 17px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif'
+}
+nav a:hover{
+    opacity: 0.5;
+}
+form{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+form input{
+    padding: 6px;
+    outline: none;
+    font-size: 12px;
+    width: 250px;
+    border: none;
+    border-radius: 7px;
+}
+form button{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-left: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+.name-title{
+    margin: 20px auto;
+}
+.name-title h1{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 2px;
+    font-size: 3rem;
+}
+.main{
+    height: 100vh;
+}
+.background-penguin{
+    background-image: url('https://www.marylandzoo.org/wp-content/uploads/2023/01/namcob-headerslider-zoogram3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 90%;
+}
+.main-description{
+    height: 100%;
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
+    justify-content: center;
+    width: 260px;
+    margin-left: 250px;
+    color: white;
+}
+.main-description h1{
+    font-size: 6rem;
+    line-height: 0.65;
+    margin-top: -100px;
+}
+.main-description p{
+    font-size: 20px;
+    margin-top: 10px;
+}
+.main-description button{
+    width: fit-content;
+    padding: 10px;
+    color: #000000;
+    background-color: #F5811F;
+    border: none;
+    border-radius: 8px;
+    transition: all ease 0.1s;
+    cursor: pointer;
+}
+.main-description button:hover{
+    opacity: 0.7;
+}
+
+/* FILTER ANIMALS */
+
+.filter-animals{
+    background-color: #f3a734ec;
+}
+.filter-container{
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+.filter-container h3{
+    font-size: 26px;
+}
+.filter-container select{
+    width: fit-content;
+    padding: 10px;
+    border: none;
+    border-radius: 7px;
+    outline: none;
+    cursor: pointer;
+}
+
+/* BACKGROUND ZEBRA */
+
+.background-zebra{
+    background-image: url('https://www.marylandzoo.org/wp-content/themes/mission/assets/images/giraffe-repeat-y.png');
+    height: 80%;
+}
+.animal-list{
+    padding: 100px;
+}
+.animal-grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 80px;
+}
+.animal-list h2{
+    font-size: 32px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.animal-grid article{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    cursor: pointer;
+}
+.animal-grid img:hover{
+    opacity: 0.8;
+}
